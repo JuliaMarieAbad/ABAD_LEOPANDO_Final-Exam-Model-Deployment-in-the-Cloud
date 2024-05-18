@@ -5,7 +5,9 @@ import numpy as np
 from PIL import Image
 import gdown
 
-github_repo_url = 'https://github.com/JuliaMarieAbad/ABAD_LEOPANDO_Final-Exam-Model-Deployment-in-the-Cloud/main/app.py'
+github_repo_url = 'https://github.com/JuliaMarieAbad/ABAD_LEOPANDO_Final-Exam-Model-Deployment-in-the-Cloud.git'
+model_url = f'https://github.com/JuliaMarieAbad/ABAD_LEOPANDO_Final-Exam-Model-Deployment-in-the-Cloud/raw/main/cat_dog_classifier.h5'
+model_path = 'cat_dog_classifier.h5'
 
 @st.cache(hash_funcs={type(lambda: 0): id})  
 def load_model():
