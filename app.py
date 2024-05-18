@@ -6,7 +6,9 @@ import numpy as np
 from PIL import Image
 import gdown
 
-model_url = 'https://drive.google.com/file/d/1i-4gl3rc51bA-leUYd9vgR-8hi0Q5Urx/view?usp=drive_link'  
+st.title("Cat and Dog Classifier")
+
+model_url = 'https://drive.google.com/file/d/1i-4gl3rc51bA-leUYd9vgR-8hi0Q5Urx'  
 model_path = 'cat_dog_classifier.h5'
 
 @st.cache(allow_output_mutation=True)
@@ -28,7 +30,7 @@ def predict(image):
     return predicted_class
 
 st.title("Cat and Dog Image Classification App")
-uploaded_file = st.file_uploader("Choose an image...", type="jpg")
+uploaded_file = st.file_uploader("Please choose an image:  ", type="jpg")
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
