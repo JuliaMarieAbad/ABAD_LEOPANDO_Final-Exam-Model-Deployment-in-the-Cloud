@@ -5,8 +5,8 @@ import numpy as np
 from PIL import Image
 import gdown
 
-model_url = 'https://drive.google.com/uc?id=1-5nuiYfCquOenxH5jXiamI6ccXylYIVh'
-model_path = 'cat_dog_classifier.h5'
+##model_url = 'https://drive.google.com/uc?id=1-5nuiYfCquOenxH5jXiamI6ccXylYIVh'
+##model_path = 'cat_dog_classifier.h5'
 
 @st.cache(hash_funcs={type(lambda: 0): id})  
 def load_model():
