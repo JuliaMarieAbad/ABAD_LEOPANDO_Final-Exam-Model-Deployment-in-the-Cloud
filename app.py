@@ -6,7 +6,6 @@ from PIL import Image
 import gdown
 
 model_url = 'https://raw.githubusercontent.com/JuliaMarieAbad/ABAD_LEOPANDO_Final-Exam-Model-Deployment-in-the-Cloud/main/app.py'
-model_path = 'cat_dog_classifier.h5'
 
 @st.cache(hash_funcs={type(lambda: 0): id})  
 def load_model():
